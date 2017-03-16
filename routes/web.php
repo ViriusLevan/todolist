@@ -23,3 +23,11 @@ Route::get('todo', 'TodoController@index');
 
 Route::get('todo', 'TodoController@index');
 Route::post('todo', 'TodoController@store');
+
+
+//Route::post('todoErase', 'TodoController@erase');
+//Route::get('todo/{id}/delete', ['uses' => 'TodoController@erase', 'as' => 'todo.erase']);
+Route::delete('todo/{id}/delete', 'TodoController@destroy');
+//Route::get('delete/{id}','TodoController@destroy');
+
+
