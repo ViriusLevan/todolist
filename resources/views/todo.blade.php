@@ -10,8 +10,8 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h1>ToDo List</h1>
-				<ul>   
-					@foreach($todo as $td)
+				<ul>  
+ 					@foreach($todo as $td)
 					<li> {{ $td->item }} 
 					<form action="todo/{{ $td->id_todo }}/delete" method="post">
 					{{ csrf_field() }} {{ method_field('DELETE') }}

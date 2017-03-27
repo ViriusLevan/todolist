@@ -24,6 +24,13 @@ Route::get('todo', 'TodoController@index');
 Route::get('todo', 'TodoController@index');
 Route::post('todo', 'TodoController@store');
 
+Route::get('mail', function(){
+	return view('mail');
+});
+
+Route::post('send_email', 'MailController@send');
+
+
 
 //Route::post('todoErase', 'TodoController@erase');
 //Route::get('todo/{id}/delete', ['uses' => 'TodoController@erase', 'as' => 'todo.erase']);
